@@ -1,0 +1,36 @@
+permalink: pretty
+name: <%= site_name %>
+
+exclude:
+  - .bowerrc
+  - .scss-lint.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bower.json
+  - bin/*
+
+assets:
+  dirname: assets
+  baseurl: /assets/
+
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+
+  js_compressor: uglifier
+  css_compressor: sass
+  gzip: false
+  debug: true
+
+baseurl: /
+url: /
+
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+
+ga_analytics: UA-XXXXXXXX-X
