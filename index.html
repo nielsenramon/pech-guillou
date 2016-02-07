@@ -3,3 +3,36 @@ layout: default
 title: ""
 description: ""
 ---
+
+<header style="background: url({% asset_path header-home.jpg %}) no-repeat center center; background-size: cover;">
+  <div class="header-overlay">
+    <div class="grid grid-centered">
+      <div class="grid-cell is-centered">
+        <nav class="header-navigation">
+          <a href="">
+            <img src="{% asset_path logo-white.png %}" alt="">
+          </a>
+          <ul>
+            <li><a href="#">The house</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Availability</a></li>
+            <li><a href="#">Guestbook</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content fade-in">
+          <h1>Your Holiday Dream House</h1>
+          <p>Find rest and breathtaking views in one of the finest houses around Agen, France</p>
+          <a href="{{ site.baseurl }}house" class="button button-primary">Discover the house</a>
+        </div>
+        <a href="#down" class="header-down fade-in" title="Scroll down">
+          <i class="material-icons">arrow_drop_down</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="down">
+
+</main>

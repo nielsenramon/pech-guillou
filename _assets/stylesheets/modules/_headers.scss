@@ -1,0 +1,82 @@
+// =============================================================================
+// Headers
+// =============================================================================
+
+header {
+  position: relative;
+  z-index: 40;
+  display: block;
+}
+
+.header-overlay {
+  display: block;
+  height: 100%;
+  padding-top: 75px;
+  background: rgba($gray-darkest, .6);
+}
+
+.header-navigation {
+  display: inline-block;
+  text-align: center;
+  a {
+    display: inline-block;
+    img {
+      height: 70px;
+    }
+  }
+  ul {
+    display: block;
+    padding: 0;
+    margin: 25px auto 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      a {
+        font-family: $sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1em;
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: border-color $base-transition-speed linear;
+        &:hover {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.header-content {
+  padding: 200px 0 300px;
+  h1 {
+    color: $white;
+  }
+  p {
+    font-size: 18px;
+    color: $white;
+  }
+  .button {
+    margin-top: 35px;
+  }
+}
+
+.header-down {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  margin-left: -12px;
+  i {
+    display: inline-block;
+    width: 24px;
+    font-size: 24px;
+    color: $white;
+    background-color: rgba($black, .1);
+    transition: background-color $base-transition-speed linear;
+  }
+  &:hover i {
+    background-color: $brand-primary;
+  }
+}
