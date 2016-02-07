@@ -1,0 +1,23 @@
+// =============================================================================
+// Sections
+// =============================================================================
+
+section {
+  display: block;
+  padding: 100px 0;
+  p::first-letter {
+    float: left;
+    padding-right: 15px;
+    margin-top: -4px;
+    font-size: 79px;
+    line-height: 1;
+  }
+}
+
+.section-light {
+  background: rgba($brand-primary, .1);
+}
+
+.section-dark {
+  background: $gray-darkest;
+}

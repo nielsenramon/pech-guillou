@@ -58,11 +58,21 @@ h2 {
 }
 
 h3 {
-  font-size: $base-font-size * 1.75;
+  font-size: $base-font-size * 1.5;
 }
 
 h4 {
-  font-size: $base-font-size * 1.5;
+  display: block;
+  padding: 35px 0 30px;
+  margin-bottom: 50px;
+  font-family: $serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: .05em;
+  color: $gray-darker;
+  text-align: center;
+  border-top: 1px solid rgba($brand-primary-dark, .3);
+  border-bottom: 1px solid rgba($brand-primary-dark, .3);
 }
 
 h5 {

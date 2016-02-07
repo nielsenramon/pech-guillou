@@ -32,10 +32,11 @@ $brand-success: #1fbf92;
 $brand-danger: #e74b3c;
 $brand-primary: #daa820;
 $brand-warning: #f1c90b;
+$brand-primary-dark: darken(#daa820, 10);
 
 // Font colors
 
-$base-font-color: $gray-dark;
+$base-font-color: $gray-darker;
 $base-accent-color: $brand-primary;
 $base-accent-highlighted-color: darken($base-accent-color, 15);
 
@@ -56,8 +57,8 @@ $negative-gutter: 0 - $gutter;
 
 // Font sizes
 
-$base-font-size: 16px;
-$base-line-height: 1.6;
+$base-font-size: 14px;
+$base-line-height: 1.8;
 
 // Box sizes
 
