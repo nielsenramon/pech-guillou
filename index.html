@@ -23,7 +23,7 @@ description: ""
         <div class="header-content fade-in">
           <h1>Your Holiday Dream House</h1>
           <p>Find rest and breathtaking views in one of the finest houses around Agen, France</p>
-          <a href="#" class="button button-primary">Discover the house</a>
+          <a href="#" class="button button-primary">Book now</a>
         </div>
         <a href="#down" class="header-down fade-in" title="Scroll down">
           <i class="material-icons">arrow_drop_down</i>
@@ -36,9 +36,9 @@ description: ""
 <main id="down">
   <section>
     <div class="grid grid-centered">
-      <div class="grid-cell with-5col is-middle">
+      <div class="grid-cell with-5col is-middle fade-in">
         <h4>The Perfect Getaway</h4>
-        <p>
+        <p class="section-letter">
           Pech Guillou is often described as one of the most beautiful houses in the area,  it rests as one of the only traditional stone manoir house on top of a mountain in the middle .
           Because of its unique location, the medieval hunting lodge offers breathtaking views which have changed little over the centuries.
           <br>
@@ -48,24 +48,139 @@ description: ""
         </p>
       </div>
 
-      <div class="grid-cell with-7col is-middle">
+      <div class="grid-cell with-7col is-middle fade-in">
         <img src="{% asset_path homepage-showcase.jpg %}" alt="Beautifully renovated rooms">
       </div>
     </div>
   </section>
 
-  <section class="section-light">
-    4 master bedrooms
-    4 teenager/childeren bedrooms
-    1 indoor kitchen
-    1 outdoor kitchen
-    1 dining room
-    1 sitting room
-    1 laundry room
-    1 swimming pool
-  </section>
+  <section class="section-background" style="background: url({% asset_path background-home.jpg %}) no-repeat center center;"></section>
 
-  <section class="section-dark">
-    Testimonials
+  <section class="section-gray">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <div class="section-mosaic">
+          <h2 class="fade-in">Find your cosy spot</h2>
+          <p class="fade-in">Pech Guillou has so much more to offer, make sure to discover Cauzac and its suroundings.</p>
+          <a href="#" class="fade-in" title="Big family dining room">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                Big family<br> dining room
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/dining.jpg %}" alt="Big family dining room">
+          </a>
+          <a href="#" class="fade-in" title="4 rooms for kids">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                4 rooms<br> for kids
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/kids.jpg %}" alt="4 rooms for kids">
+          </a>
+          <a href="#" class="fade-in" title="An outdoor kitchen">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                An outdoor <br> kitchen
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/kitchen-outdoor.jpg %}" alt="An outdoor kitchen">
+          </a>
+          <a href="#" class="fade-in" title="Fully equiped kitchen">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                Fully equiped <br> kitchen
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <h6></h6>
+            <img src="{% asset_path rooms/kitchen.jpg %}" alt="Fully equiped kitchen">
+          </a>
+          <a href="#" class="fade-in" title="Comfy lounge area">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                Comfy lounge <br> area
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/lounge.jpg %}" alt="Comfy lounge area">
+          </a>
+          <a href="#" class="fade-in" title="Plenty of information">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                Plenty of <br> information
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/info.jpg %}" alt="Plenty of information">
+          </a>
+          <a href="#" class="fade-in" title="Grand swimming pool">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                Grand swimming <br> pool
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/pool.jpg %}" alt="Grand swimming pool">
+          </a>
+          <a href="#" class="fade-in" title="4 Master bedrooms">
+            <div>
+              <h6>
+                <span class="stripe"></span>
+                4 Master <br> bedrooms
+                <span class="stripe"></span>
+              </h6>
+            </div>
+            <img src="{% asset_path rooms/room.jpg %}" alt="4 Master bedrooms">
+          </a>
+        </div>
+      </div>
+      <div class="grid-cell with-3col">
+        <div class="box fade-in">
+          <img src="{% asset_path activities/castle.jpg %}" alt="Castle tour">
+          <h5>Castle tour</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="grid-cell with-3col">
+        <div class="box fade-in">
+          <img src="{% asset_path activities/hiking.jpg %}" alt="Hiking">
+          <h5>Hiking</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="grid-cell with-3col">
+        <div class="box fade-in">
+          <img src="{% asset_path activities/market.jpg %}" alt="Markets">
+          <h5>Markets</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="grid-cell with-3col">
+        <div class="box fade-in">
+          <img src="{% asset_path activities/restaurants.jpg %}" alt="Restaurants">
+          <h5>Restaurants</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>

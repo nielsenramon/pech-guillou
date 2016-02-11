@@ -1,0 +1,19 @@
+// =============================================================================
+// Boxes
+// =============================================================================
+
+.box {
+  display: block;
+  background: $white;
+  border-radius: $base-border-radius;
+  img {
+    border-radius: $base-border-radius $base-border-radius 0 0;
+  }
+  h5 {
+    padding: 35px 25px 20px;
+  }
+  p {
+    padding: 0 25px 35px;
+    font-size: 13px;
+  }
+}

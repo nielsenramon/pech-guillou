@@ -28,3 +28,15 @@ window.sr = ScrollReveal({
   origin: 'top'
 });
 sr.reveal('.fade-in');
+
+// Weather service
+
+$(function() {
+  $.simpleWeather({
+    location: 'Cauzac, Fance',
+    unit: 'c',
+    success: function(weather) {
+      $(".weather").html('<h2><span class="weather-icon weather-' + weather.code + '"></span><span>'+weather.temp+'&deg;'+weather.units.temp+'</span></h2>');
+    }
+  });
+});
