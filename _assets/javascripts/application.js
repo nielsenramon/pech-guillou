@@ -17,6 +17,17 @@ $(function() {
   });
 });
 
+// Fixed navigation
+  $(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 250) {
+      $(".navigation-fixed").fadeIn();
+    } else {
+      $(".navigation").fadeOut();
+    }
+  });
+
 // Fade in animation
 
 window.sr = ScrollReveal({

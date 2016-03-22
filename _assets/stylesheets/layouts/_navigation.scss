@@ -2,9 +2,83 @@
 // Navigation
 // =============================================================================
 
-nav {
-  display: block;
-  text-align: left;
+.navigation {
+  display: inline-block;
+  .grid-cell {
+    text-align: center;
+  }
+  ul {
+    display: block;
+    padding: 0;
+    margin: 25px auto 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      a {
+        font-family: $sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: .1em;
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: border-color $base-transition-speed linear;
+        &:hover {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.navigation-brand {
+  display: inline-block;
+  img {
+    height: 70px;
+  }
+}
+
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  height: 80px;
+  background: $white;
+  border-bottom: 1px solid $base-border-color;
+  box-shadow: 2px 0 5px rgba($gray-darkest, .2);
+  .grid-cell {
+    text-align: left;
+  }
+  &.is-hidden {
+    display: none;
+  }
+  .navigation-brand {
+    display: inline-block;
+    margin-top: 10px;
+    img {
+      height: 60px;
+    }
+  }
+  ul {
+    float: right;
+    margin: 30px 0 0;
+    li {
+      margin: 0 0 0 40px;
+      a {
+        color: $gray;
+        border: 0;
+        transition: color $base-transition-speed linear;
+        &:hover,
+        &.is-active {
+          color: $gray-darkest;
+          border: 0;
+        }
+      }
+    }
+  }
 }
 
 .navigation-logo {

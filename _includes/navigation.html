@@ -1,14 +1,16 @@
-<nav>
-  <a href="" class="navigation-logo">
-    <img src="{% asset_path logo-white.png %}" alt="">
-  </a>
-  <ul class="navigation-links">
-    <li><a href="#">Rooms</a></li>
-    <li><a href="#">Location</a></li>
-    <li><a href="#">Availability</a></li>
-    <li><a href="#">Guestbook</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+<nav class="navigation navigation-fixed is-hidden">
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <a href="{{ site.baseurl }}" title="{{ site.name }}" class="navigation-brand">
+        <img src="{% asset_path logo-normal.png %}" alt="{{ site.name }}">
+      </a>
+      <ul>
+        <li><a href="#" title="The house">The house</a></li>
+        <li><a href="#" title="Location">Location</a></li>
+        <li><a href="#" title="Availability">Availability</a></li>
+        <li><a href="#" title="Guestbook">Guestbook</a></li>
+        <li><a href="#" title="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
-<!-- http://www.booking.com/hotel/fr/holiday-home-maitairie-haute-m-662.nl.html?checkin=2016-01-26;dist=0;group_adults=2;interval=8;sb_price_type=total;soh=1;type=total;ucfs=1& -->
