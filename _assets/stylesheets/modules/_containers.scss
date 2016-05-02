@@ -1,0 +1,38 @@
+// =============================================================================
+// Containers
+// =============================================================================
+
+.container {
+  display: block;
+  font-size: 0;
+  background: $white;
+  border-radius: $base-border-radius;
+}
+
+.container-map {
+  display: inline-block;
+  width: 50%;
+  height: 700px;
+  font-size: $base-font-size;
+  vertical-align: middle;
+}
+
+.container-text {
+  display: inline-block;
+  width: 50%;
+  font-size: $base-font-size;
+  vertical-align: middle;
+  p {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.container-form {
+  display: block;
+  padding: 100px;
+  background: $white;
+  border-radius: $base-border-radius;
+}

@@ -8,7 +8,9 @@
 form {
   position: relative;
   display: block;
+  padding-top: 50px;
   clear: both;
+  border-top: 1px solid $base-border-color;
 }
 
 fieldset {
@@ -34,7 +36,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: $base-font-weight-bold;
-  color: $base-font-color;
+  color: $gray;
 }
 
 input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
@@ -43,8 +45,8 @@ textarea {
   padding: 10px 15px;
   font-family: $base-font-family;
   color: $base-font-color;
-  background-color: $white;
-  border: 1px solid $gray-lighter;
+  background-color: $gray-lightest;
+  border: 0;
   border-radius: $base-border-radius;
   transition: border-color $base-transition-speed linear;
   appearance: none;
@@ -70,6 +72,7 @@ textarea {
 }
 
 textarea {
+  min-height: 150px;
   resize: vertical;
 }
 
@@ -92,5 +95,9 @@ input[type="file"] {
 .form-item {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.form-button {
+  text-align: right;
 }

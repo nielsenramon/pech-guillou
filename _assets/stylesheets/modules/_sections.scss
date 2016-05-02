@@ -24,6 +24,15 @@ section {
   background: $gray-darkest;
 }
 
+.section-intro {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  p {
+    margin-top: 10px;
+  }
+}
+
 .section-letter::first-letter {
   float: left;
   padding-right: 15px;

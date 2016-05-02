@@ -44,6 +44,59 @@
   {% javascript vendor %}
   {% javascript application %}
 
+  {% if page.handle == 'availability' %}
+    {% javascript vendor/underscore.js %}
+    {% javascript vendor/calendar %}
+    {% javascript vendor/tabletop %}
+    {% javascript calendar %}
+  {% endif %}
+
+  {% if page.handle == 'location' %}
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap" type="text/javascript"></script>
+
+    <script>
+      function initMap() {
+        var styles = [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}];
+        var bruges = new google.maps.LatLng(44.276257, 0.834423);
+
+        var mapOptions = {
+          zoom: 7,
+          center: bruges,
+          mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
+          }
+        };
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        var styledMapOptions = {
+          name: "Pech Guillou"
+        };
+
+        var jayzMapType = new google.maps.StyledMapType(styles, styledMapOptions);
+
+        map.mapTypes.set('bestfromgoogle', jayzMapType);
+        map.setMapTypeId('bestfromgoogle');
+
+        var companyPos = new google.maps.LatLng(44.276257, 0.834423);
+
+        var companyMarker = new google.maps.Marker({
+          map: map,
+          position: companyPos,
+          icon: {
+            url: '{% asset_path icon-location.png %}',
+            scaledSize: new google.maps.Size(35, 35),
+            anchor: new google.maps.Point(17, 17),
+          },
+          title: "Typework",
+          zIndex: 5
+        });
+
+        var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(-84.999999, -179.999999), new google.maps.LatLng(84.999999, 179.999999));
+      };
+    </script>
+  {% endif %}
+
   <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

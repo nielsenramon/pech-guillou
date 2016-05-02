@@ -18,15 +18,16 @@ $(function() {
 });
 
 // Fixed navigation
-  $(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= 250) {
-      $(".navigation-fixed").fadeIn();
-    } else {
-      $(".navigation").fadeOut();
-    }
-  });
+$(window).on('scroll', function() {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 250) {
+    $(".navigation-appear").fadeIn();
+  } else {
+    $(".navigation-appear").fadeOut();
+  }
+});
 
 // Fade in animation
 
