@@ -36,3 +36,83 @@
   background: $white;
   border-radius: $base-border-radius;
 }
+
+.container-price {
+  display: block;
+  padding: 50px;
+  text-align: center;
+  background: $white;
+  border-radius: $base-border-radius;
+  p {
+    margin: 10px 0 20px;
+    color: $gray;
+  }
+  h2 {
+    color: $brand-primary;
+    span {
+      display: block;
+      font-size: 12px;
+      color: $gray-light;
+    }
+  }
+}
+
+.container-calendar {
+  display: block;
+  padding: 100px;
+  margin-top: $gutter * 2;
+  background: $white;
+  border-radius: $base-border-radius;
+  .btn-group {
+    display: inline-block;
+    vertical-align: top;
+    &.is-right {
+      float: right;
+    }
+  }
+}
+
+.container-calendar-title {
+  display: block;
+  padding: 15px 0;
+  margin: 35px 0 25px;
+  text-align: center;
+  border-top: 1px solid $base-border-color;
+  border-bottom: 1px solid $base-border-color;
+}
+
+.container-calendar-legend {
+  display: block;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.legend {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+  p {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    background: #1e90ff;
+    border-radius: 50%;
+  }
+  &.is-booking span {
+    background: #ad2121;
+  }
+}
+
+#calendar {
+  font-family: $sans-serif !important;
+}
+
+.cal-cell1 {
+  font-size: 14px;
+}

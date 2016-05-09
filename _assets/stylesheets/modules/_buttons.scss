@@ -65,7 +65,22 @@
 // Basic generated buttons
 
 .button-default {
-  @include button-generator($gray-lightest, $base-font-color);
+  color: $base-font-color;
+  background-color: $gray-lightest;
+  &:hover {
+    color: $base-font-color;
+    background-color: darken($gray-lightest, 5);
+  }
+  &:focus,
+  &:active {
+    color: $base-font-color;
+    background-color: darken($gray-lightest, 10);
+    outline: none;
+  }
+  &.active {
+    color: $white;
+    background: $brand-primary;
+  }
 }
 
 .button-danger {
