@@ -8,8 +8,19 @@ section {
 }
 
 .section-background {
+  position: relative;
   height: 600px;
   background-size: cover !important;
+}
+
+.section-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 100px 0;
+  background: rgba($brand-info, .2);
 }
 
 .section-light {

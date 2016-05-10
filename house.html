@@ -7,9 +7,251 @@ handle: house
 
 {% include navigation.html %}
 
-<section>
+<section class="section-gray navigation-margin">
   <div class="grid grid-centered">
     <div class="grid-cell">
+      <div class="section-intro">
+        <h2>Plenty of bedrooms</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div id="carouselBedrooms" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/coloniale-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Suite Coloniale</h2>
+                <p>
+                  Beautiful, big and fully equiped room freshly renovated with a king-size boxspring double bed and direct access to the swimming pool. It has all basic necessities like
+                  wardrobe, closet, desk, air conditioning, shower, sink, hairdryer, toilet and toiletries.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/la-vie-on-rose-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Chambre La Vie en Rose</h2>
+                <p>
+                  Beautiful, big and fully equiped room freshly renovated with a king-size boxspring double bed and is situated at the ground floor level. It has all basic necessities like
+                  wardrobe, closet, desk, air conditioning, bath, sink, hairdryer, toilet and toiletries.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/de-lavande-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Chambre de la Lavande</h2>
+                <p>
+                  Beautiful, big and fully equiped room with a king-size boxspring double bed and is situated at the ground floor level. It has all basic necessities like
+                  wardrobe, closet, desk, air conditioning, shower, sink, hairdryer, toilet and toiletries.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/oliviers-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Chambre des Oliviers</h2>
+                <p>
+                  Smaller master bedroom with king-size boxspring double bed. It is situated at the ground floor level and has the basic necessities like a wardrobe/closet, desk, a lavatoire and a hairdyer.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/pigonnier-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Pigonnier Tower</h2>
+                <p>
+                  Childeren bedroom in the iconic Pigonnier tower with 2 bunk beds on the first floor and a twin bedded room on the second floor. So space for 6 childeren. It has basic necessities like wardrobes, desk, a lavatoire and a hairdryer.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path bedrooms/loft-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Loft</h2>
+                <p>
+                  Childeren bedroom with 3 single bedded rooms and one twin bedded room. So space for 5 childeren. It has basic necessities like wardrobes, desk, shower, a lavatoire and a hairdryer.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="house-box-indicators">
+          <a class="left carousel-control" href="#carouselBedrooms" role="button" data-slide="prev">
+            <i class="material-icons">chevron_left</i>
+          </a>
+          <a class="right carousel-control" href="#carouselBedrooms" role="button" data-slide="next">
+            <i class="material-icons">chevron_right</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-background" style="background: url({% asset_path pool/background-pool.jpg %}) no-repeat center center;">
+  <div class="section-overlay">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <div class="house-box-pool">
+          <h3>The swimming pool</h3>
+          <p>
+            Pech Guillou has an awesome and big swimming pool with multiple levels and temperature managed. There are enough sun loungers with cushions for all guests and an outdoor shower.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-gray">
+  <div class="grid grid-centered">
+    <div class="grid-cell">
+      <div class="section-intro">
+        <h2>Equipment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div id="carouselEquipment" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path equipment/kitchen-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Kitchen</h2>
+                <p>
+                  A fully equiped kitchen with all the basic necessities like a microwave oven, gas oven, fridge, freezer, dishwasher, water cooker, toaster, coffeemaker and Senseo.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path equipment/outdoor-kitchen-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Outdoor kitchen</h2>
+                <p>
+                  A great outdoor teras with 2 classic barbeques, a stone oven and a fridge. Great for dining outdoors with a nice view.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path equipment/dining-room-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Dining room</h2>
+                <p>
+                  An indoor dining room with enough space for all guests and a cosy fireplace.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="house-box">
+              <div class="house-box-image" style="background: url({% asset_path equipment/lounge-front.jpg %}) no-repeat center center;">
+              </div>
+              <div class="house-box-text">
+                <h2>Lounge room</h2>
+                <p>
+                  The lounge room is fully equiped with all you need to relax: a television set with DVD player, hifi set with CD player, Free Wifi, comics, books and boardgames.
+                </p>
+                <a href="#" title="View all pictures">
+                  View all pictures
+                  <i class="material-icons">trending_flat</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="house-box-indicators">
+          <a class="left carousel-control" href="#carouselEquipment" role="button" data-slide="prev">
+            <i class="material-icons">chevron_left</i>
+          </a>
+          <a class="right carousel-control" href="#carouselEquipment" role="button" data-slide="next">
+            <i class="material-icons">chevron_right</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-cell with-4col">
+      <div class="house-info">
+        <i class="material-icons">local_laundry_service</i>
+        <h3>Laundry room</h3>
+        <p>With washing machine, tumble dryer, vacuum cleaner and uroning board with flat iron.</p>
+      </div>
+    </div>
+    <div class="grid-cell with-4col">
+      <div class="house-info">
+        <i class="material-icons">directions_car</i>
+        <h3>Parking space</h3>
+        <p>Private parking space for multiple cars in front of the house.</p>
+      </div>
+    </div>
+    <div class="grid-cell with-4col">
+      <div class="house-info">
+        <i class="material-icons">beach_access</i>
+        <h3>Private</h3>
+        <p>Escape from your busy life in Pech Guillou as one of the only three houses on the hill.</p>
+      </div>
     </div>
   </div>
 </section>

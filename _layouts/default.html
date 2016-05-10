@@ -44,6 +44,10 @@
   {% javascript vendor %}
   {% javascript application %}
 
+  {% if page.handle == 'home' %}
+    {% javascript smooth-scroll %}
+  {% endif %}
+
   {% if page.handle == 'availability' %}
     {% javascript vendor/underscore.js %}
     {% javascript vendor/calendar %}
