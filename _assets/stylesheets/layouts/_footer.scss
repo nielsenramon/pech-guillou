@@ -34,7 +34,7 @@
       span {
         display: inline-block;
         color: $gray-lighter;
-        vertical-align: middle;;
+        vertical-align: middle;
       }
       .weather-icon {
         padding-top: 12px;
@@ -83,10 +83,14 @@ footer {
   }
   &.is-right {
     float: right;
-    li a {
-      color: $gray;
-      &:hover {
-        color: $white;
+    li {
+      margin-right: 0;
+      margin-left: 25px;
+      a {
+        color: $gray;
+        &:hover {
+          color: $white;
+        }
       }
     }
   }

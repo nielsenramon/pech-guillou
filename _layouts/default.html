@@ -48,6 +48,10 @@
     {% javascript smooth-scroll %}
   {% endif %}
 
+  {% if page.handle == 'house' %}
+    {% javascript lightbox %}
+  {% endif %}
+
   {% if page.handle == 'availability' %}
     {% javascript vendor/underscore.js %}
     {% javascript vendor/calendar %}
