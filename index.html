@@ -23,7 +23,7 @@ handle: home
         <div class="header-content fade-in">
           <h1>Your Holiday Dream House</h1>
           <p>Find rest and breathtaking views in one of the finest houses around Agen, France</p>
-          <a href="#" class="button button-primary">Book now</a>
+          <a href="{{ site.baseurl }}availability" class="button button-primary" title="Check availability">Check availability</a>
         </div>
         <a href="#down" class="header-down fade-in" title="Scroll down">
           <i class="material-icons">arrow_drop_down</i>
@@ -64,7 +64,7 @@ handle: home
         <div class="section-mosaic">
           <h2 class="fade-in">Find your cosy spot</h2>
           <p class="fade-in">Pech Guillou has so much more to offer, make sure to discover Cauzac and its suroundings.</p>
-          <a href="#" class="fade-in" title="Big family dining room">
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -73,8 +73,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/dining.jpg %}" alt="Big family dining room">
-          </a>
-          <a href="#" class="fade-in" title="4 rooms for kids">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -83,8 +83,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/kids.jpg %}" alt="4 rooms for kids">
-          </a>
-          <a href="#" class="fade-in" title="An outdoor kitchen">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -93,8 +93,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/kitchen-outdoor.jpg %}" alt="An outdoor kitchen">
-          </a>
-          <a href="#" class="fade-in" title="Fully equiped kitchen">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -104,8 +104,8 @@ handle: home
             </div>
             <h6></h6>
             <img src="{% asset_path rooms/kitchen.jpg %}" alt="Fully equiped kitchen">
-          </a>
-          <a href="#" class="fade-in" title="Comfy lounge area">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -114,8 +114,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/lounge.jpg %}" alt="Comfy lounge area">
-          </a>
-          <a href="#" class="fade-in" title="Plenty of information">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -124,8 +124,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/info.jpg %}" alt="Plenty of information">
-          </a>
-          <a href="#" class="fade-in" title="Grand swimming pool">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -134,8 +134,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/pool.jpg %}" alt="Grand swimming pool">
-          </a>
-          <a href="#" class="fade-in" title="4 Master bedrooms">
+          </div>
+          <div class="section-mosaic-block fade-in">
             <div>
               <h6>
                 <span class="stripe"></span>
@@ -144,7 +144,8 @@ handle: home
               </h6>
             </div>
             <img src="{% asset_path rooms/room.jpg %}" alt="4 Master bedrooms">
-          </a>
+          </div>
+          <a href="{{ site.baseurl }}house" title="View the house" class="fade-in">View the house <i class="material-icons">trending_flat</i></a>
         </div>
       </div>
       <div class="grid-cell with-3col">

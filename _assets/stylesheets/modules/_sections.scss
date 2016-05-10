@@ -66,50 +66,55 @@ section {
     font-size: $base-font-size;
   }
   a {
-    position: relative;
     display: inline-block;
-    width: 25%;
-    padding: 12.5px;
-    overflow: hidden;
-    font-size: $base-font-size;
-    div {
-      position: absolute;
-      top: 12.5px;
-      right: 12.5px;
-      bottom: 12.5px;
-      left: 12.5px;
-      background: rgba($gray-darkest, .7);
-      transition: background $base-transition-speed linear;
-      h6 {
-        display: inline-block;
-        padding: 50% 0 0;
-        margin-top: -68px;
-        font-family: $sans-serif;
-        font-size: 14px;
-        letter-spacing: .1em;
-        color: $white;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      .stripe {
-        display: block;
-        width: 70px;
-        height: 1px;
-        margin: 25px auto;
-        background: rgba($brand-primary, .7);
-        transition: transform $base-transition-speed linear;
-      }
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 16px;
+    font-style: italic;
+    border-top: 1px solid rgba($brand-primary-dark, .3);
+    border-bottom: 1px solid rgba($brand-primary-dark, .3);
+    i {
+      display: inline-block;
+      margin-left: 15px;
+      font-size: 16px;
+      vertical-align: middle;
     }
-    &:hover {
-      div {
-        background: rgba($gray-darkest, .5);
-        .stripe:first-child {
-          transform: translateY(-5px);
-        }
-        .stripe:last-child {
-          transform: translateY(5px);
-        }
-      }
+  }
+}
+
+.section-mosaic-block {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  padding: 12.5px;
+  overflow: hidden;
+  font-size: $base-font-size;
+  div {
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+    bottom: 12.5px;
+    left: 12.5px;
+    background: rgba($gray-darkest, .5);
+    transition: background $base-transition-speed linear;
+    h6 {
+      display: inline-block;
+      padding: 50% 0 0;
+      margin-top: -68px;
+      font-family: $sans-serif;
+      font-size: 14px;
+      letter-spacing: .1em;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .stripe {
+      display: block;
+      width: 70px;
+      height: 1px;
+      margin: 25px auto;
+      background: rgba($brand-primary, .7);
+      transition: transform $base-transition-speed linear;
     }
   }
 }
