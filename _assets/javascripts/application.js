@@ -4,12 +4,19 @@
 
 $(window).on('scroll', function() {
   var scroll = $(window).scrollTop();
-
-  if (scroll >= 250) {
-    $(".navigation-appear").fadeIn();
-  } else {
-    $(".navigation-appear").fadeOut();
+  var windowsize = $(window).width();
+  if (windowsize > 767) {
+    if (scroll >= 250) {
+      $(".navigation-appear").fadeIn();
+    } else {
+      $(".navigation-appear").fadeOut();
+    }
   }
+});
+
+$('.navigation-trigger').on('click', function () {
+  $('.navigation ul').toggleClass('is-open');
+  $('.navigation-trigger').toggleClass('is-open');
 });
 
 // Fade in animation

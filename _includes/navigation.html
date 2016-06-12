@@ -4,6 +4,9 @@
       <a href="{{ site.baseurl }}" title="{{ site.name }}" class="navigation-brand">
         <img src="{% asset_path logo-normal.png %}" alt="{{ site.name }}">
       </a>
+      <div class="navigation-trigger">
+        <i class="material-icons">menu</i>
+      </div>
       <ul>
         <li><a href="{{ site.baseurl }}house" {% if page.handle == 'house' %}class="is-active"{% endif %} title="The house">The house</a></li>
         <li><a href="{{ site.baseurl }}location" {% if page.handle == 'location' %}class="is-active"{% endif %} title="Location">Location</a></li>

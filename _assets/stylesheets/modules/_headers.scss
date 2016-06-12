@@ -12,7 +12,7 @@ header {
   display: block;
   height: 100%;
   padding-top: 75px;
-  background: rgba($gray-darkest, .6);
+  background: rgba($gray-darkest, .4);
 }
 
 .header-navigation {
@@ -78,5 +78,14 @@ header {
   }
   &:hover i {
     background-color: $brand-primary;
+  }
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .header-navigation {
+    display: none;
   }
 }

@@ -81,31 +81,92 @@
   }
 }
 
-.navigation-logo {
-  display: inline-block;
-  vertical-align: middle;
-  img {
-    height: 70px;
-  }
+.navigation-margin {
+  margin-top: 80px;
 }
 
-.navigation-links {
+// Responsive
+// =============================================================================
+
+.navigation-trigger {
+  position: relative;
+  z-index: 9999;
+  display: none;
   float: right;
-  padding: 16px 30px;
-  li {
-    display: inline-block;
-    margin-left: 30px;
-    vertical-align: middle;
-    a {
-      font-size: 15px;
+  height: 60px;
+  padding: 16px 15px;
+  cursor: pointer;
+  background: $gray-lightest;
+  transition: all $base-transition-speed linear;
+  i {
+    font-size: 28px;
+    color: $gray-dark;
+    transition: all $base-transition-speed linear;
+  }
+  &:hover {
+    background: $gray-lighter;
+  }
+  &.is-open {
+    background: $brand-primary;
+    i {
       color: $white;
-      &:hover {
-        color: $gray-darker;
-      }
     }
   }
 }
 
-.navigation-margin {
-  margin-top: 80px;
+@include breakpoint(small) {
+  .navigation-appear.is-hidden {
+    display: block;
+  }
+  .navigation-trigger {
+    display: inline-block;
+  }
+  .navigation-fixed {
+    height: 60px;
+    .navigation-brand img {
+      height: 40px;
+    }
+    ul {
+      position: fixed;
+      top: 60px;
+      right: $gutter;
+      z-index: 9990;
+      display: none;
+      margin: 0;
+      background: $white;
+      border-radius: $base-border-radius;
+      box-shadow: 0 0 10px rgba($black, .2);
+      li {
+        display: block;
+        margin: 0;
+        a {
+          display: block;
+          padding: 15px 25px;
+          color: $gray;
+          background: $white;
+          border-bottom: 1px solid $base-border-color;
+          transition: all $base-transition-speed linear;
+          &:hover {
+            color: $gray-darkest;
+            background: $gray-lightest;
+            border-bottom: 1px solid $base-border-color;
+          }
+          &.is-active {
+            color: $white;
+            background: $brand-primary;
+            border-bottom: 1px solid $base-border-color;
+          }
+          &:last-child {
+            border-radius: 0 0 $base-border-radius $base-border-radius;
+          }
+        }
+      }
+      &.is-open {
+        display: block;
+      }
+    }
+  }
+  .navigation-margin {
+    margin-top: 60px;
+  }
 }
