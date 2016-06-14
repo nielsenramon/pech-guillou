@@ -45,12 +45,15 @@ section {
   }
 }
 
-.section-letter::first-letter {
-  float: left;
-  padding-right: 15px;
-  margin-top: -4px;
-  font-size: 79px;
-  line-height: 1;
+.section-letter {
+  text-align: justify;
+  &::first-letter {
+    float: left;
+    padding-right: 15px;
+    margin-top: -4px;
+    font-size: 79px;
+    line-height: 1;
+  }
 }
 
 .section-mosaic {

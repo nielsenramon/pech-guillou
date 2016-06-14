@@ -35,6 +35,9 @@
   padding: 100px;
   background: $white;
   border-radius: $base-border-radius;
+  form {
+    min-height: 416px;
+  }
 }
 
 .container-price {
@@ -44,6 +47,7 @@
   background: $white;
   border-radius: $base-border-radius;
   p {
+    min-height: 50px;
     margin: 10px 0 20px;
     color: $gray;
   }
@@ -64,10 +68,11 @@
   background: $white;
   border-radius: $base-border-radius;
   .btn-group {
-    display: inline-block;
+    display: block;
+    text-align: center;
     vertical-align: top;
-    &.is-right {
-      float: right;
+    .button {
+      display: inline-block;
     }
   }
 }
@@ -75,7 +80,7 @@
 .container-calendar-title {
   display: block;
   padding: 15px 0;
-  margin: 35px 0 25px;
+  margin: 25px 0;
   text-align: center;
   border-top: 1px solid $base-border-color;
   border-bottom: 1px solid $base-border-color;
