@@ -19,7 +19,7 @@ exclude:
   - README.md
   - vendor/
 
-ga_analytics: UA-XXXXXXXX-X
+ga_analytics: UA-79479509-1
 
 gems:
   - jekyll-assets
@@ -29,4 +29,4 @@ name: Pech Guillou
 
 permalink: pretty
 
-url: http://pechguillou.nielsenramon.com
+url: http://pechguillou.com
