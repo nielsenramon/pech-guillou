@@ -7,6 +7,8 @@
   background: $white;
   border-radius: $base-border-radius;
   img {
+    display: block;
+    width: 100%;
     border-radius: $base-border-radius $base-border-radius 0 0;
   }
   h5 {
@@ -17,5 +19,32 @@
     padding: 0 25px 35px;
     font-size: 13px;
     text-align: justify;
+  }
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(medium) {
+  .box {
+    margin-bottom: $gutter * 2;
+    p {
+      min-height: 104px;
+    }
+    &.is-third,
+    &.is-fourth {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include breakpoint(small) {
+  .box {
+    p {
+      min-height: 81px;
+    }
+    &.is-third {
+      margin-bottom: $gutter * 2;
+    }
   }
 }

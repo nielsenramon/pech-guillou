@@ -85,3 +85,15 @@
     cursor: pointer;
   }
 }
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .carousel-inner {
+    height: auto;
+    .item {
+      height: auto;
+    }
+  }
+}

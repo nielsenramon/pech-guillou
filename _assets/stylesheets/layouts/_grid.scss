@@ -95,8 +95,17 @@
 // Responsive
 // =============================================================================
 
+@include breakpoint(medium) {
+  .grid-centered.is-half .grid-cell.with-3col {
+    width: 50%;
+  }
+}
+
 @include breakpoint(small) {
   .grid-cell {
     @include responsive-grid-generator();
+  }
+  .grid-centered.is-half .grid-cell.with-3col {
+    width: 100%;
   }
 }

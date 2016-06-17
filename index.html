@@ -54,7 +54,9 @@ handle: home
       </div>
 
       <div class="grid-cell with-7col is-middle fade-in">
-        <img src="{% asset_path homepage-showcase.jpg %}" alt="Beautifully renovated rooms">
+        <div class="section-collage">
+          <img src="{% asset_path homepage-showcase.jpg %}" alt="Beautifully renovated rooms">
+        </div>
       </div>
     </div>
   </section>
@@ -151,6 +153,8 @@ handle: home
           <a href="{{ site.baseurl }}house" title="View the house" class="fade-in">View the house <i class="material-icons">trending_flat</i></a>
         </div>
       </div>
+    </div>
+    <div class="grid grid-centered is-half">
       <div class="grid-cell with-3col">
         <div class="box fade-in">
           <img src="{% asset_path activities/castle.jpg %}" alt="Castle tour">
@@ -170,7 +174,7 @@ handle: home
         </div>
       </div>
       <div class="grid-cell with-3col">
-        <div class="box fade-in">
+        <div class="box is-third fade-in">
           <img src="{% asset_path activities/market.jpg %}" alt="Markets">
           <h5>Markets</h5>
           <p>
@@ -179,7 +183,7 @@ handle: home
         </div>
       </div>
       <div class="grid-cell with-3col">
-        <div class="box fade-in">
+        <div class="box is-fourth fade-in">
           <img src="{% asset_path activities/restaurants.jpg %}" alt="Restaurants">
           <h5>Restaurants</h5>
           <p>

@@ -9,7 +9,7 @@
 }
 
 .footer-weather {
-  display: block;
+  display: inline-block;
   h3 {
     display: inline-block;
     color: $gray-light;
@@ -47,7 +47,8 @@
 }
 
 .footer-contact {
-  display: inline-block;
+  float: right;
+  text-align: right;
   a {
     display: block;
     font-size: 16px;
@@ -100,4 +101,45 @@ footer {
   margin-top: 15px;
   font-style: italic;
   color: $gray-darker;
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .footer-weather {
+    display: block;
+  }
+  .footer-contact {
+    display: block;
+    float: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .footer-links {
+    display: block;
+    &.is-right {
+      float: none;
+      li {
+        margin-right: 25px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint(extra-small) {
+  .footer-weather {
+    display: block;
+    text-align: center;
+    .weather {
+      display: block;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  .footer-contact {
+    margin-top: 30px;
+    text-align: center;
+  }
 }

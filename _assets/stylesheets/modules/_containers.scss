@@ -121,3 +121,31 @@
 .cal-cell1 {
   font-size: 14px;
 }
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(medium) {
+  .container-form {
+    padding: 100px 50px;
+  }
+}
+
+@include breakpoint(small) {
+  .container-map {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  .container-text {
+    display: block;
+    width: 100%;
+    padding: 100px 25px;
+  }
+}
+
+@include breakpoint(extra-small) {
+  .container-form {
+    padding: 75px 25px;
+  }
+}

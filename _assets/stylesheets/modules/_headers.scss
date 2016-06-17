@@ -88,4 +88,13 @@ header {
   .header-navigation {
     display: none;
   }
+  .header-content {
+    padding: 150px 0 200px;
+    p {
+      font-size: 16px;
+    }
+  }
+  .header-down {
+    bottom: 50px;
+  }
 }

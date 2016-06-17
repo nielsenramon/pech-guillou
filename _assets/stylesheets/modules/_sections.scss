@@ -121,3 +121,52 @@ section {
     }
   }
 }
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(medium) {
+  .section-collage {
+    position: relative;
+    display: block;
+    width: 100%;
+    img {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+  .section-background {
+    height: 500px;
+  }
+  .section-mosaic {
+    padding: 75px 25px 62.5px;
+  }
+  .section-mosaic-block div h6 {
+    font-size: 12px;
+  }
+}
+
+@include breakpoint(small) {
+  section {
+    padding: 75px 0;
+  }
+  .section-background {
+    height: 400px;
+    &.is-pool {
+      height: 600px;
+    }
+  }
+  .section-mosaic-block {
+    width: 50%;
+  }
+}
+
+@include breakpoint(extra-small) {
+  .section-mosaic-block {
+    width: 100%;
+  }
+}
