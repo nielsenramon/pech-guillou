@@ -125,6 +125,18 @@
 // Responsive
 // =============================================================================
 
+@include breakpoint(large) {
+  .container-price {
+    padding: 50px 30px;
+    p {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
 @include breakpoint(medium) {
   .container-form {
     padding: 100px 50px;
@@ -141,6 +153,23 @@
     display: block;
     width: 100%;
     padding: 100px 25px;
+  }
+  .container-price {
+    padding: 50px 30px;
+    margin-bottom: $gutter * 2;
+    p {
+      min-height: auto;
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    &.is-last {
+      margin-bottom: 0;
+    }
+  }
+  .container-calendar {
+    padding: 75px 30px;
   }
 }
 
