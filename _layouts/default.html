@@ -50,6 +50,11 @@
 
   {% if page.handle == 'house' %}
     {% javascript lightbox %}
+    <script type="text/javascript">
+      $('.carousel').carousel({
+        interval: false
+      })
+    </script>
   {% endif %}
 
   {% if page.handle == 'availability' %}
