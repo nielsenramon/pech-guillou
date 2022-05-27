@@ -68,7 +68,7 @@ GEM
     parallel (1.9.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rack (1.6.4)
+    rack (1.6.13)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
